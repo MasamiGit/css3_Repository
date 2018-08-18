@@ -1,11 +1,11 @@
-body{
+body {
     text-align: center;
 }
-.parentDiv{
 
-}
-img{
-    margin:100px;
-    transform:rotateZ(60deg);
-    color:beige;
+.parentDiv {}
+
+img {
+    margin: 100px;
+    transform: rotateZ(60deg);
+    color:
 }
