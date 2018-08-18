@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+.parentDiv{
+
+}
+img{
+    margin:100px;
+    transform:rotateZ(60deg);
+}
