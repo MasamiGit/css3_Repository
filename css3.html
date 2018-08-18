@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<title>css3_lessoon</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+	<nav>
+		<ul>
+			<li id="dv1" class="cs1 cs2 cs3">
+				<a onclick="test();" href="#">home</a>
+			</li>
+			<li id="dv2" class="cs1 cs2 cs3">
+				<a onclick="test();" href="about.html">about</a>
+			</li>
+			<li id="dv3" class="cs1 cs2 cs3">
+				<a onclick="test();" href="access.html">access</a>
+			</li>
+		</ul>
+	</nav>
 	<div class="parentDiv">
 		<img src="img/line_mamesiba_01.svg" alt="豆しば権兵衛">
 	</div>
+	<div class="img100">
+
+	</div>
+	<div class="img200">
+	</div>
+	<div class="img300"></div>
+	<div class="img400"></div>
+	<script src="js/main.js"></script>
+	<script>
+		function test() {
+			var obj = document.getElementById("dv1");
+			dv1.addEventListener('click', function(){
+
+			});
+			
+			var list = obj.classList;
+			console.log(List);
+
+		}
+	</script>
 </body>
+
 </html>

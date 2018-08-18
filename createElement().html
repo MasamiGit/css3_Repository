@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>.createElement()</title>
+    <script>
+        window.onload = (function () {
+            'use strict';
+            try {
+                var masami_box = null;
+                var newSection = null;
+                var addElement = function () {
+                    var newSection = document.createElement("section");
+                    var newContent = document.createTextNode("生成される要素オブジェクトです。");
+                    newSection.appendChild(newContent);
+                    masami_box = document.getElementById("content");
+                    document.body.insertBefore(newSection, masami_box);
+                }
+                document.getElementById("Characters_are_added").onclick = addElement;
+            } catch (e) {console.log(e.message);}
+        });
+
+        window.onload = function(){
+            try{
+                var i = 0;
+                var j = 0;
+                for(i = 0; i < 5; i++){
+                    j += i;
+                }
+                if(j > 5){
+                    throw new Error('ｊが5より大きいです');
+                }
+                alert(j);
+            }catch(e){
+                console.log("エラー：", e.message);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">要素を追加するボタン</div>
+    <input type="button" value="クリック" id="Characters_are_added">
+</body>
+
+</html>

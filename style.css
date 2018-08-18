@@ -6,6 +6,75 @@ body {
 
 img {
     margin: 100px;
-    transform: rotateZ(60deg);
+    /* transform: rotateZ(60deg); */
     color:
+}
+.img100{
+    background: url(images/500_252.jpg);
+    background-repeat: no-repeat;
+    width: 500px;
+    height:252px;
+}
+.img200{
+    background: url(images/#floder.sprite.css);
+    background-repeat: no-repeat;
+    width:500px;
+    height:252px;
+}
+nav{
+    width:500px;
+    height:300px;
+    margin:0 auto;
+}
+nav ul li:last-child {
+    border-right: 1px red solid;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+nav ul li{
+    float: left;
+    width:100px;
+    height:40px;
+    list-style-type: none;
+    background-color:blue;
+    color:aliceblue;
+    line-height: 40px;
+    text-align: center;
+    border-left:1px solid red;
+    cursor: pointer; 
+}
+nav ul li:hover {
+    float: left;
+    width: 100px;
+    height: 40px;
+    list-style-type: none;
+    background-color: rgb(91, 91, 230);
+    color: aliceblue;
+    line-height: 40px;
+    text-align: center;
+    border-left: 1px solid red;
+}
+nav ul li:active {
+    float: left;
+    width: 100px;
+    height: 40px;
+    list-style-type: none;
+    background-color: rgb(0, 255, 64);
+    color: aliceblue;
+    line-height: 40px;
+    text-align: center;
+    border-left: 1px solid red;
+}
+nav ul li.pushed {
+    float: left;
+    width: 100px;
+    height: 40px;
+    list-style-type: none;
+    background-color:darkorange;
+    color: aliceblue;
+    line-height: 40px;
+    text-align: center;
+    border-left: 1px solid red;
 }
